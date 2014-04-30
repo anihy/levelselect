@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<style>
+.colunm{margin:auto;width:500px;}
+.select{padding-left:20px;width:100px;height:28px;line-height:28px;border:1px #ccc solid;background:url(img/normal.gif) 5px center no-repeat;}
+.selectBox{position:absolute;width:260px;height:220px;background:#fff;z-index:1;overflow:hidden;border:2px #ea5606 solid;
+                        border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
+.selectBox .title{display:inline-block;padding-left:20px;width:inherit;height:30px;line-height:30px;font-size:16px;color:#ea5606;}
+.selectBox  a{float:left;margin-top:5px;margin-left:13px;width:30px;font-size:12px;color:#000;text-decoration:none;}
+.selectBox  a:hover{color:#ea5606;text-decoration:underline;}
+</style>
+<body>
+
+<div class="colunm">
+	<span class="title">地点</span>
+	<div class="select" id="areaSelect">选择</div>
+	<input type="hidden" id="area" name="area"/>
+	<div class='selectBox' style="display:none;">
+		<span class="title" id="hotcity">热门城市</span>
+		<span class="title" id="province">所有省份</span>
+	</div>
+
+</div>
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="js/levelSelect.js"></script>
+
+</body>
+</html>
